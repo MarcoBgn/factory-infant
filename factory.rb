@@ -1,5 +1,4 @@
 class Factory < BasicObject
-  include ::Kernel
   def initialize
     @attributes = {}
   end

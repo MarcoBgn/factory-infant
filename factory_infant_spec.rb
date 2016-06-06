@@ -6,10 +6,8 @@ RSpec.describe(FactoryInfant) do
     FactoryInfant.define do
       factory User do
         first_name "Joe"
-        last_name {"Of #{ENV['PWD'].split("/").last}"}
-        email do
-          "person#{Random.rand(300)}@example.com"
-        end
+        last_name { "Of #{ENV['PWD'].split("/").last}"}
+        email { "person#{Random.rand(300)}@example.com"}
       end
     end
 
